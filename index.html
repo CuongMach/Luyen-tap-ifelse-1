@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyện tập if else 1</title>
+</head>
+<body>
+<!--<div><b>Bài 1: Nhập vào hai số a và b, và kiểm tra xem a có chia hết cho b hay không</b></div>-->
+<!--<input type="text" placeholder="nhập số a" id="soa" value="">-->
+<!--<input type="text" placeholder="nhập số b" id="sob" value="">-->
+<!--<button value="Kiểm tra" onclick="kiemtra()">Kiểm tra</button>-->
+<!--<p id="ketqua"></p>-->
+
+<!--<script>-->
+<!--    function kiemtra(){-->
+<!--        let a = document.getElementById("soa").value-->
+<!--        let b = document.getElementById("sob").value-->
+<!--        if (a % b == 0){-->
+<!--            document.getElementById("ketqua").innerHTML = "a chia hết cho b"-->
+<!--        } else {-->
+<!--            document.getElementById("ketqua").innerHTML = "a không chia hết cho b"-->
+<!--        }-->
+<!--    }-->
+
+<!--</script>-->
+
+<!--Bài 2-->
+<!--<div><b>Nhập tuổi và in ra kết quả nếu tuổi học sinh đó không đủ điều kiện vào học lớp 10.</b></div>-->
+<!--<input type="text" id="sotuoibuoi" placeholder="Nhập tuổi" value="">-->
+<!--<button value="Kiểm tra" onclick="kiemtra()">Kiểm tra</button>-->
+<!--<p id="ketqua"></p>-->
+<!--<script>-->
+<!--    function kiemtra() {-->
+<!--        let sotuoi = parseInt(document.getElementById("sotuoibuoi").value);-->
+<!--        if (sotuoi < 16){-->
+<!--            document.getElementById("ketqua").innerHTML = "Mày đéo đủ tuổi học lớp 10"-->
+<!--        }-->
+<!--    }-->
+<!--</script>-->
+
+<!--Bài 3-->
+<!--<div><b>Nhập một số nguyên bất kỳ và in kết quả ra màn hình để nói cho người dùng biết số đó là lớn hay nhỏ hơn 0</b></div>-->
+<!--<input type="number" id="nhapso" placeholder="Nhập số nguyên" value="">-->
+<!--<button onclick="kiemtra()">Kiểm tra</button>-->
+<!--<p id="ketqua"></p>-->
+
+<!--<script>-->
+<!--    function kiemtra(){-->
+<!--        let songuyen = parseInt(document.getElementById("nhapso").value);-->
+<!--        if (songuyen > 0){-->
+<!--            document.getElementById("ketqua").innerHTML = songuyen + " Lớn hon 0"-->
+<!--        }else {-->
+<!--            document.getElementById("ketqua").innerHTML = songuyen + " Nhỏ hơn 0"-->
+<!--        }-->
+<!--    }-->
+<!--</script>-->
+
+<!--Bài 4-->
+<!--<div><b>Nhập 3 số nguyên và tìm giá trị lớn nhất của ba số nguyên đó</b></div>-->
+<!--<input type="number" id="soa" placeholder="Nhập số thứ nhất" value="">-->
+<!--<input type="number" id="sob" placeholder="Nhập số thứ hai" value="">-->
+<!--<input type="number" id="soc" placeholder="Nhập số thứ ba" value="">-->
+<!--<button onclick="sosanh()">So sánh</button>-->
+<!--<b id="ketqua"></b>-->
+
+<!--<script>-->
+<!--    function sosanh(){-->
+<!--        let sothunhat = parseInt(document.getElementById("soa").value);-->
+<!--        let sothuhai = parseInt(document.getElementById("sob").value);-->
+<!--        let sothuba = parseInt(document.getElementById("soc").value);-->
+<!--        if (sothunhat>sothuhai && sothunhat>sothuba){-->
+<!--            document.getElementById("ketqua").innerHTML = "Số " + sothunhat + " là số lớn nhất"-->
+<!--        }else if(sothuhai>sothunhat && sothuhai>sothuba){-->
+<!--            document.getElementById("ketqua").innerHTML = "Số " + sothuhai + " là số lớn nhất"-->
+<!--        }else {-->
+<!--            document.getElementById("ketqua").innerHTML = "Số " + sothuba + " là số lớn nhất"-->
+<!--        }-->
+<!--    }-->
+<!--</script>-->
+
+<!--Bài 5-->
+<!--<div><b> Xếp hạng học lực của học sinh dựa trên các điểm bài kiểm tra, điểm thi giữa kỳ, điểm thi cuối kỳ</b></div>-->
+<!--<input type="number" id="diema" placeholder="Nhập điểm giữa kì" value="">-->
+<!--<input type="number" id="diemb" placeholder="Nhập điểm cuối kì" value="">-->
+<!--<input type="number" id="diemc" placeholder="Nhập điểm kiểm tra" value="">-->
+<!--<button onclick="xephang()">Xếp hạng</button>-->
+<!--<p id="ketqua"></p>-->
+<!--<script>-->
+<!--    function xephang(){-->
+<!--        let diemgiuaki = parseInt(document.getElementById("diema").value);-->
+<!--        let diemcuoiki = parseInt(document.getElementById("diemb").value);-->
+<!--        let diemkiemtra = parseInt(document.getElementById("diemc").value);-->
+<!--        let diemtrungbinh = (diemkiemtra+(diemgiuaki*2)+(diemcuoiki*3))/6-->
+
+<!--        if(diemtrungbinh >= 8 ) {-->
+<!--            document.getElementById("ketqua").innerHTML = "Xếp hạng giỏi"-->
+<!--        }else if (diemtrungbinh >= 6.5){-->
+<!--            document.getElementById("ketqua").innerHTML = "Xếp hạng khá"-->
+<!--        }else if (diemtrungbinh >= 5){-->
+<!--            document.getElementById("ketqua").innerHTML = "Xếp hạng trung bình"-->
+<!--        }else if (diemtrungbinh < 3.5){-->
+<!--            document.getElementById("ketqua").innerHTML = "Xếp hạng yếu"-->
+<!--        }-->
+<!--    }-->
+<!--</script>-->
+
+<!--Bài 6-->
+<!--<div><b>Tính hoa hồng nhận được tuỳ theo mức doanh số bán hàng</b></div>-->
+<!--<input type="number" id="doanhso" placeholder="Nhập doanh số bán hàng" value="">-->
+<!--<button onclick="tinhtien()">Tính tiền</button>-->
+<!--<b id="ketqua"></b>-->
+
+<!--<script>-->
+<!--    function tinhtien(){-->
+<!--        let sotienhang = parseInt(document.getElementById("doanhso").value);-->
+<!--        let b = sotienhang * (2/100);-->
+<!--        let c = sotienhang * (5/100);-->
+<!--        let d = sotienhang * (9/100);-->
+<!--        if (sotienhang<=100000){-->
+<!--            document.getElementById("ketqua").innerHTML = "Số tiền hoa hồng của bạn là " + b;-->
+<!--        }else if (sotienhang<=500000){-->
+<!--            document.getElementById("ketqua").innerHTML = "Số tiền hoa hồng của bạn là " + c;-->
+<!--        }else if (sotienhang>500000){-->
+<!--            document.getElementById("ketqua").innerHTML = "Số tiền hoa hồng của bạn là " + d;-->
+<!--        }-->
+<!--    }-->
+
+
+<!--</script>-->
+
+<!--Bài 7-->
+<input type="text" id="sophutgoi" placeholder="Số phút gọi">
+<select id="cuocgoi">
+    <option value="1">Nội mạng</option>
+    <option value="2">Ngoại mạng</option>
+</select>
+<button onclick="tinhtien()">Tính tiền</button>
+<p id="ketqua"></p>
+<script>
+    function tinhtien(){
+        let sophut = parseInt(Math.round(document.getElementById("sophutgoi").value));
+        let cuoc = document.getElementById("cuocgoi").value;
+        let noimang = sophut * 1590
+        let ngoaimang = sophut * 1790
+        if (cuoc == "1" ){
+            document.getElementById("ketqua").innerHTML = noimang + " VND"
+        }else {
+            document.getElementById("ketqua").innerHTML = ngoaimang + " VND"
+        }
+    }
+
+</script>
+</body>
+</html>
